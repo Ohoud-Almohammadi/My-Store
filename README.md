@@ -14,7 +14,6 @@ The project includes the functionality below:
  - Pull this repo
  - Run `npm install` to install all dependencies
  
- # Start
- on the terminal run: 
-  `ng s`
+ # Start 
+  - Run `ng s`
  - Navigate to `http://localhost:4200/`
