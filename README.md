@@ -10,12 +10,11 @@ The project includes the functionality below:
  - complete the order and checkout
 
 
-# Run 
-## Install dendensece
+# Install dependencies
+ - Pull this repo
  - Run `npm install` to install all dependencies
  
  # Start
- ## pull this repo
- - run this command:
+ on the terminal run: 
   `ng s`
  - Navigate to `http://localhost:4200/`
