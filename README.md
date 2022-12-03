@@ -1,6 +1,7 @@
 # MyStore 
 
-This is a full single-page e-commerce application with Angular called MyStore. Through this app, users are able to view a list of available products to purchase, add them to the cart, and complete the checkout process.
+This is a full single-page e-commerce application with Angular called MyStore. Through this app, users are able to view a list of available products to purchase, add them to the cart, and complete the checkout process. This project was generated with [Angular CLI], version 15.0.1.
+
 The project includes the functionality below: 
  - View the product list
  - View singel product 
@@ -8,13 +9,13 @@ The project includes the functionality below:
  - delete a product from the cart 
  - complete the order and checkout
 
-This project was generated with [Angular CLI], version 15.0.1.
 
-#Run 
+# Run 
 ## Install dendensece
  - Run `npm install` to install all dependencies
  
  # Start
- - pull this repo, run this command:
+ ## pull this repo
+ - run this command:
   `ng s`
- Navigate to `http://localhost:4200/`
+ - Navigate to `http://localhost:4200/`
