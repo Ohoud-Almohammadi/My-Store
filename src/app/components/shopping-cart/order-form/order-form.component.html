@@ -1,0 +1,16 @@
+
+    <form #form2='ngForm' class='form-margin' (ngSubmit)='OnSubmit(order.full_name, order.address, order.credit_card_number, cart_items, cartTotalPrice)'>
+        <h4>Checkout</h4> <br />
+        <p>Full Name:
+        <br><input [(ngModel)]='order.full_name' type='text' size="20" name='fullName' placeholder='Enter full name' required minlength='3'>
+    </p>
+        <p>Address:
+        <br><input [(ngModel)]='order.address' type='text' name='address' placeholder='Enter address' required minlength='6'>
+    </p>
+        <p>Credit Card Number:
+        <br><input [(ngModel)]='order.credit_card_number' type='text'  pattern="\d*" name='creditCard' placeholder='16-digit number' required minlength='16' >
+    </p>
+        <button type='submit' class='btn btn-outline-secondary '[disabled]="form2.invalid" >Submit</button><br />
+    </form>
+    <button class='back-button' routerLink = '/' >Back to product list <span>&#8594;</span></button>
+    

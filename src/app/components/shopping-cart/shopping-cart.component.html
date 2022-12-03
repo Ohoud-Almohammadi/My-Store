@@ -1,0 +1,32 @@
+
+     <ng-template #emptyCart>
+        <div class="empty-message">
+        
+            <h1>Cart Is Empty !</h1>
+           
+            <button class='back-button' routerLink = '/' >Back to product list <span>&#8594;</span></button>
+        </div>
+    </ng-template>
+
+     <div class="cart-container" *ngIf="cart_items.length; else emptyCart" >
+        <div class="cart-item-details" class="col-md-8">
+            <div *ngFor='let cartItem of cart_items' class="cart-item">
+                <img class="" src='{{cartItem.product.image}}'>
+                <div class="cart-panel">
+                    <div class="item-detail"> <strong>{{ cartItem.product.name}} </strong></div>
+                    <div class="item-detail">$ {{cartItem.product.price}}</div>
+                    <div class="item-detail">Quantity </div>
+                      <div class="item-detail">
+                        <input [(ngModel)]='cartItem.quantity' (ngModelChange)='OnChange(cartItem)' type=number  class="select-input" required min='0' >    
+                    </div>
+                    
+                </div>
+            </div><hr style="width:60%;border-width: 1px;color:black">
+            <div class="cart-item"><b>Total Price: ${{ cartTotalPrice }}</b></div>
+            
+        </div>
+       
+        <div class="form">
+                <app-order-form></app-order-form>
+        </div>
+    </div>

@@ -1,0 +1,17 @@
+<div class = 'detail-container'>
+    <img class="img" src = {{product.image}}>
+    <div class = 'detail-item'>
+        {{product.name}} 
+        <br>
+        {{product.price}}
+        <br>
+        {{product.description}}
+        <form #form2='ngForm' (ngSubmit)= 'OnSubmit(product, cart_item.quantity)'>   <br>
+            <input type="number" name="quantity" class="select-input" [(ngModel)]=" cart_item.quantity" required min="1">
+            <br>
+            <button type="submit" [disabled]="form2.invalid" class="btn btn-primary btn-sm">Add to Cart</button> 
+            </form>
+            <br />
+            <button class='back-button' routerLink = '/' >Back to product list <span>&#8594;</span></button>
+    </div>
+</div>

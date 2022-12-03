@@ -1,0 +1,11 @@
+<div class="product-container">
+    <img class="product-image" src="{{productI.image}}" alt="" [routerLink]="['/products', productI.id]">
+    <br>{{productI.name}}
+    <br>${{productI.price}}
+    <form #form='ngForm' (ngSubmit)='addedToCart.emit({product:productI, quantity:quantity})'>
+        <input type="number" name="quantity" class="select-input" [(ngModel)]="quantity" required min="1">
+        <br>
+        <button type="submit" [disabled]="form.invalid" class="btn btn-secondary btn-sm">Add to Cart</button>
+
+    </form>
+</div>

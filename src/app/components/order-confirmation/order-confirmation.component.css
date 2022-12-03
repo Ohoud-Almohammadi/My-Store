@@ -1,0 +1,30 @@
+.confirmation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+  }
+  
+  .confirmation-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .confirmation-header {
+    color: #899e7e
+  }
+  
+  .confirmation-item {
+    margin-bottom: 30px;
+  }
+  span {
+    content: "\2192";
+    width: 80px;
+  }
+  .back-button{
+    background-color: Transparent;
+      background-repeat:no-repeat;
+      border: none;
+      color: #899e7e
+  }

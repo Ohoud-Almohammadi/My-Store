@@ -1,0 +1,6 @@
+<!-- ProductList #4, create product list view -->
+<div class = "container">
+<body class="product-index">
+    <app-product-item *ngFor="let p of products" [productI]="p" (addedToCart)='addToCart($event)'></app-product-item>
+</body>
+</div>
